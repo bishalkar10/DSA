@@ -69,7 +69,7 @@ class Queue :
         self.head = None 
         return "Queue is deleted"
         
-    def print_Queue(self) : # print the queue 
+    def printQueue(self) : # print the queue 
         if self.head is None : 
             print("Queue is Empty")
         else : 
