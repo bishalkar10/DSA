@@ -58,8 +58,19 @@ class Stack :
         print (self.head.value)  
         
     # deletes the entire stack     
-    def delete_stack(self) : 
+    def delete(self) : 
         self.head = None 
-        
+    
+    def printStack(self) : # print the stack
+        if self.head is None : 
+            print("Stack is Empty")
+        else : 
+            itr = self.head 
+            llst = ""
+            while itr : 
+                llst += str(itr.value) + " " if itr.next else str(itr.value)                  
+                itr = itr.next 
+            print(llst)
+    
 # instance of Stack      
 stack = Stack()
