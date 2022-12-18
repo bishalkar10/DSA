@@ -46,8 +46,8 @@ def Majority_Element(A,N):
         elif  N == 0 : 
             return -1
             
-        Dict = Counter (A)
-         
+        Dict = Counter (A)
+      
         for item in A :
             if Dict[item] > N/2 : 
                 return item
