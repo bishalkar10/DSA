@@ -7,8 +7,8 @@ Example : q = Queue()
 There are few method to work with this data structure : 
 
 1. enqueue() - insert item at the end of the queue
-   syntax : instace.enqueue() 
-   Example : q.enqueue() 
+    syntax : instace.enqueue() 
+    Example : q.enqueue() 
 
 2. dequeue() - It will delete the first item of the queue 
    syntax : instace.dequeue() 
