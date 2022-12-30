@@ -1,0 +1,24 @@
+"""
+Given an array of N integers. Find the first element that occurs at least K number of times.
+ 
+"""
+
+"""
+Link : https://practice.geeksforgeeks.org/problems/first-element-to-occur-k-times5150/1?page=1&curated[]=1&sortBy=submissions
+"""
+
+def firstElementKTime(a, n, k):
+    # code here 
+    Dict = {} 
+    for item in a :  
+       
+        if item not in Dict :
+                       
+            Dict[item] = 1 
+            if Dict[item] == k : 
+                return item
+        else : 
+            Dict[item] += 1  
+            if Dict[item] == k : 
+                return item
+    return -1
